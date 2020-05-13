@@ -25,13 +25,6 @@ function toggleTodo (id) {
   }
 }
 
-function addGoal (goal) {
-  return {
-    type: ADD_GOAL,
-    goal,
-  }
-}
-
 export function handleDeleteTodo (todo) {
   return (dispatch) => {
     dispatch(removeTodo(todo.id))

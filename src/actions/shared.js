@@ -16,7 +16,7 @@ export function handleInitialData() {
       API.fetchTodos(),
       API.fetchGoals()
     ]).then(([ todos, goals ]) => {
-      store.dispatch(receiveData(todos, goals))
+      dispatch(receiveData(todos, goals))
     })
   }
 }
